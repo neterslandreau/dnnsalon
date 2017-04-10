@@ -12,5 +12,21 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('build');
 });
+
+Route::get('blog-home-1', function() {
+	return view('blog-home-1');
+});
+
+Route::get('blog-home-2', function() {
+	return view('blog-home-2');
+});
+
+Route::get('blog-post', function() {
+	return view('blog-post');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
